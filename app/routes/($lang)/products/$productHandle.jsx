@@ -575,11 +575,11 @@ export default function Product() {
                 // backgroundPosition: siteObj.left + " " + siteObj.top,
                 // transform: 'scale(0.7)',
               }}></div>
-              <img src={`https://platform.antdiy.vip/static/image/croiala_icon.svg`} />
+              <img src={`https://platform.antdiy.vip/static/image/bolan.svg`} />
               <span>{currencyCode || LText.type}</span>
             </div>
 
-            <img className='logo' src={`https://platform.antdiy.vip/static/image/aidoria_logo.svg`} />
+            <img className='logo' src={`https://platform.antdiy.vip/static/image/jessielike_logo.svg`} />
             <p onClick={() => { window.open('https://' + getShopAddress()) }}><img src="https://platform.antdiy.vip/static/image/zoopetcc_home.svg" /></p>
             {/* <p></p> */}
           </div>

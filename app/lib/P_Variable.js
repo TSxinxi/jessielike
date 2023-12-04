@@ -5476,7 +5476,7 @@ export function getLanguage() {
       type: "zł",
       country: "Polska",
       country_code: 'PL',
-      deliveryProcess: 'deliveryProcess6.png',
+      deliveryProcess: 'deliveryProcess7.png',
       whatsAppText: "Proszę kliknąć bezpośrednio przycisk wysyłania, nie usuwać poniższego linku, najdokładniejsze odpowiedzi otrzymasz od naszego działu obsługi klienta",
       notFoundTit: 'Ta strona została utracona',
       notFoundText: 'Strona, której szukasz, nie została znaleziona.',

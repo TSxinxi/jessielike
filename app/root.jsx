@@ -47,7 +47,7 @@ export const links = () => {
       rel: 'preconnect',
       href: 'https://shop.app',
     },
-    { rel: 'icon', href: '//cdn.shopifycdn.net/s/files/1/0840/0447/1059/files/aid_9bcd0075-78fd-4298-9a44-6781eba5d1b7.png?crop=center&height=32&v=1700618653&width=32' },
+    { rel: 'icon', href: '//cdn.shopifycdn.net/s/files/1/0551/6197/8959/files/web_logo.png?crop=center&height=32&v=1701413988&width=32' },
   ];
 };
 
