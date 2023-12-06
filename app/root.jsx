@@ -87,68 +87,14 @@ export default function App() {
       localStorage.setItem('refererName', getReferer())
     }
     useEffect(() => {
-      // Sentry.init({
-      //   dsn: "https://3a9a729470c367d1557919b68842f912@o4506097284677632.ingest.sentry.io/4506098198773760",
-      //   integrations: [
-      //     new Sentry.BrowserTracing({
-      //       // Set 'tracePropagationTargets' to control for which URLs distributed tracing should be enabled
-      //       tracePropagationTargets: ["localhost", /^https:\/\/page.homeromo.com\.io\/api/],
-      //     }),
-      //     new Sentry.Replay(),
-      //   ],
-      //   // Performance Monitoring
-      //   tracesSampleRate: 1.0, // Capture 100% of the transactions
-      //   // Session Replay
-      //   replaysSessionSampleRate: 0.1, // This sets the sample rate at 10%. You may want to change it to 100% while in development and then sample at a lower rate in production.
-      //   replaysOnErrorSampleRate: 1.0, // If you're not already sampling the entire session, change the sample rate to 100% when sampling sessions where errors occur.
-      // });
-
-      // (function (h, o, t, j, a, r) {
-      //   h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-      //   h._hjSettings = { hjid: 3719262, hjsv: 6 };
-      //   a = o.getElementsByTagName('head')[0];
-      //   r = o.createElement('script'); r.async = 1;
-      //   r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      //   a.appendChild(r);
-      // })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-
-      // //   window.dataLayer = window.dataLayer || [];
-      // //   function gtag() { dataLayer.push(arguments); }
-      // //   gtag('js', new Date());
-      // //   gtag('config', 'G-X12GDSEKQ1');
-
-      // !function (f, b, e, v, n, t, s) {
-      //   if (f.fbq) return; n = f.fbq = function () {
-      //     n.callMethod ?
-      //       n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      //   };
-      //   if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      //   n.queue = []; t = b.createElement(e); t.async = !0;
-      //   t.src = v; s = b.getElementsByTagName(e)[0];
-      //   s.parentNode.insertBefore(t, s)
-      // }(window, document, 'script',
-      //   'https://connect.facebook.net/en_US/fbevents.js');
-      // fbq('init', '292861753259331');
-      // fbq('track', 'PageView');
-
-      // !(function (c, b, d, a) {
-      //   c[a] || (c[a] = {}); c[a].config =
-      //   {
-      //     pid: "gr6w69wpuh@db34193c9e236f8",
-      //     appType: "web",
-      //     imgUrl: "https://arms-retcode.aliyuncs.com/r.png?",
-      //     sendResource: true,
-      //     enableLinkTrace: true,
-      //     behavior: true,
-      //     enableSPA: true,
-      //     useFmp: true,
-      //     enableConsole: true
-      //   };
-      //   let newScript = document.createElement("script")
-      //   newScript.src = d
-      //   newScript.setAttribute("crossorigin", "")
-      //   document.body.insertBefore(newScript, document.body.firstChild);
-      // })(window, document, "https://sdk.rum.aliyuncs.com/v1/bl.js", "__bl");
+      (function () {
+        window.__insp = window.__insp || [];
+        __insp.push(['wid', 694875451]);
+        var ldinsp = function () {
+          if (typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=694875451&r=' + Math.floor(new Date().getTime() / 3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x);
+        };
+        setTimeout(ldinsp, 0);
+      })();
     }, []);
   }
   return (
